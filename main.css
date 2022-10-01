@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 :root{
     --Dark-cyan: hsl(158, 36%, 37%);
@@ -16,10 +17,8 @@ html{
     width: 100%;
 }
 body{
-    width: 100%;
     height: 100%;
     background-color: var(--Cream);
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,8 +30,8 @@ body{
     max-width: 40rem;
     max-height: 40rem;
     background-color: var(--White);
-    overflow: hidden;
     border-radius: .5rem;
+    overflow: hidden;
 }
 .main > *{
     flex-basis: 100%;   
@@ -41,13 +40,9 @@ body{
     object-fit: cover;
     max-width: 100%;
     height: 100%;
-    
-}
-picture{
-    display: inline-block;
 }
 .main__product-container{
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -58,9 +53,7 @@ h1{
     margin: 1rem 0;
 }
 p{
-    font-family: 'Montserrat', sans-serif;
     color: var(--Dark-grayish-blue);
-    
 }
 .main__product-price{
     display: flex;
@@ -79,7 +72,6 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
     border: none;
     border-radius: 5px;
     background-color: var(--Dark-cyan);
@@ -92,7 +84,7 @@ h2{
 .main__product-button img{
     margin-right: .5rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
     .main{
         flex-wrap: wrap;
     }
